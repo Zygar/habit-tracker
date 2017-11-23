@@ -59,9 +59,10 @@ To add packages `yarn add [name]` or `yarn add --dev [name]` for dev tools like 
 - `yarn deploy:testing` (not currently implemented) will run a deploy script to package and deploy to Azure at creative-design-testing.azurewebsites.net.
 - `yarn deploy:portfolio` (not currently implemented) will run a deploy script to package and deploy to Azure at creative-design.azurewebsites.net 
 
-#### Gotchas
+### Gotchas
 - Some old browsers can't handle the livereload server. If you get console errors that make noise about "let is a reserved identifier", message me on Slack and I'll talk you through solutions. 
 - If you don't have a dist/ or prod/ folder you will need to make them, or `yarn build` will fail.  
+- CSS: url() resolution for anything imported in main.css is relative to main.css. This is because postcss-import inlines all your CSS. 
 
 
 ### Changelog
