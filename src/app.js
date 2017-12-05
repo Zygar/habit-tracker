@@ -1,8 +1,6 @@
 // App.js
 // We specify our main modules here.
 
-var main = require("./js/main");
-
 /* Load Fonts */
 /* We load our webfonts using ES6 imports. PostCSS + CSS-loader messes up
    the resolution of their URL. It would be better to handle them natively
@@ -23,3 +21,15 @@ import LatoBold from 'Fonts/lato-bold/lato-bold.css'; // 700 / BOLD
 
 /* Load Styles */ 
 import styles from './css/main.css';
+
+
+const sourceData = require('./_data.js');
+import Vue from 'vue/dist/vue.js';
+import App from './App.vue';
+
+new Vue({
+  el: '#vue', 
+  // data: sourceData,
+  components: { App }
+});
+

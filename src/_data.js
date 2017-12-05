@@ -1,18 +1,18 @@
 const sourceData = {
     name: "Dose Forms",
     description: "This is the description of the activity that you will see if you click on the central node.",
-    subTypes: [
+    children: [
         {
             name: "Oral",
             description: "Oral dose forms are taken by mouth, and are absorbed through the mucosal lining of the gastrointestinal tract.",
-            subTypes: [
+            children: [
                 {
                     name: "Solid Oral Dose Forms",
-                    subTypes: [
+                    children: [
                         {
                             name: "Tablets (Tab.)",
                             description: "Tablets contain medicine and other additives that are compressed to form suitable shapes.",
-                            subTypes: [
+                            children: [
                                 {
                                     name: "Uncoated tablets",
                                     description: "Uncoated tablets are intended to break up readily when swallowed and to release the medicine. They are usually used for medicines required to produce a systemic effect because their rapid break up helps the medicine to dissolve and be absorbed.",
@@ -46,17 +46,17 @@ const sourceData = {
                                 labelDose: "2 tablets",
                                 labelFrequency: "twice daily"
                             },
-                            adviceToClient: ""
+                            adviceToClient: "Clients should be reminded that these tablets do not work properly when they are swallowed; they need to be placed under the tongue for the medicine to be absorbed. These tablets should be protected from moisture and prolonged exposure to light. Clients may also require specific instruction on how to remove the tablet from the blister pack (for example, pull the foil back from where the seal is lifted)."
                         }
                     ]
                 },
                 {
                     name: "Liquid Oral Dose Forms",
-                    subTypes: [
+                    children: [
                         {
                             name: "Solutions",
                             description: "Solutions are preparations of one or more medicines dissolved in a solvent, usually water, to produce a clear liquid. They can have systemic or local effects.",
-                            subTypes: [
+                            children: [
                                 {
                                     name: "Syrups (Syr.)",
                                     description: "Syrups are concentrated aqueous solutions of sucrose or other sugars to which medicines and flavouring agents may be added.",
@@ -102,4 +102,4 @@ const sourceData = {
     ]
 }
 
-module.exports = sourceData;
+export default sourceData;
