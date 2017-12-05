@@ -83,7 +83,7 @@
 /* --------------------------------------------------------------------------
    Component Styles
    -------------------------------------------------------------------------- */
-
+body {background-color: var(--light-blue);}
 #App {
   background-color: var(--dark-blue);
   display: flex;
