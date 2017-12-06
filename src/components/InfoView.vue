@@ -11,9 +11,10 @@
         <AdviceToClient 
             v-if="selected.adviceToClient" 
             :advice="selected.adviceToClient" /> 
-        <SubTypes 
-            v-if="selected.children" 
-            :children="selected.children" />
+        <ul>
+            <item :model="selected" />  
+        </ul>
+        
     </section>
 </template>
 
@@ -22,12 +23,12 @@ import InfoViewHeader from './InfoViewHeader.vue';
 import RenderedDescription from './RenderedDescription.vue';
 import PharmacyLabel from './PharmacyLabel.vue';
 import AdviceToClient from './AdviceToClient.vue';
-import SubTypes from './SubTypes.vue';
+import Item from './Item.vue';
 
 
 export default {
     name: 'InfoView',
-    components: { InfoViewHeader, RenderedDescription, PharmacyLabel, AdviceToClient, SubTypes },
+    components: { InfoViewHeader, RenderedDescription, PharmacyLabel, AdviceToClient, Item },
     props: ['selected']
 }
 </script>

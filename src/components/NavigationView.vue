@@ -1,20 +1,14 @@
 <template>
-    <nav id="NavigationView"  class="component">
-        <div v-if="children!=null" v-for="child in children" >
-            <SubTypes v-if="child.children" :children="child.children"/>
-        </div>
-    </nav>
+    <ul id="NavigationView"  class="component">
+        <item :model="tree" ></item>
+    </ul>
 </template>
 
 <script>
-import sourceData from '../_data.js';
-import SubTypes from './SubTypes.vue';
+import Item from './Item.vue';
 export default {
     name: 'NavigationView',
-    components: { SubTypes },
-    props: ['selected'],
-    data () {
-        return sourceData
-    }
+    components: { Item },
+    props: ['tree', 'selected']
 }
 </script>

@@ -84,6 +84,7 @@
    Component Styles
    -------------------------------------------------------------------------- */
 body {background-color: var(--light-blue);}
+.isActive-true {color:red;}
 #App {
   background-color: var(--dark-blue);
   display: flex;
