@@ -21,9 +21,6 @@ import LatoBold from 'Fonts/lato-bold/lato-bold.css'; // 700 / BOLD
 
 /* Load Styles */ 
 import styles from './css/main.css';
-
-
-const sourceData = require('./_data.js');
 import Vue from 'vue/dist/vue.js';
 import App from './App.vue';
 

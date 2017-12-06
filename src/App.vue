@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import sourceData from './_data.js';
+import sourceData from './content/_data.js';
 import InfoView from './components/InfoView.vue';
 import NavigationView from './components/NavigationView.vue';
 import eventHub from './eventHub.js';
