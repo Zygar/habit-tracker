@@ -18,7 +18,6 @@ export default {
     },
     methods: {
         emitNavigationRequest: function (requestedChild) {
-            this.isActive = true;
             eventHub.$emit('navigationRequest', requestedChild);
         }
     }

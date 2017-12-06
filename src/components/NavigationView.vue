@@ -1,6 +1,6 @@
 <template>
     <ul id="NavigationView"  class="component">
-        <item :model="tree" ></item>
+        <item :model="tree" :selected="selected" ></item>
     </ul>
 </template>
 
@@ -9,6 +9,9 @@ import Item from './Item.vue';
 export default {
     name: 'NavigationView',
     components: { Item },
-    props: ['tree', 'selected']
+    props: {
+        tree: Object,
+        selected: Object
+    }
 }
 </script>

@@ -9,7 +9,7 @@
             <button v-if="hasChildren" @click="toggle">[{{isOpened ? '-' : '+'}}]</button>
         </div>
         <ul v-show="isOpened"  v-if="hasChildren">
-            <item v-for="model in model.children" :model="model"></item>
+            <item v-for="model in model.children" :model="model" :key="model.id" :selected="selected"></item>
         </ul>
     </li>
 </template>
@@ -20,17 +20,24 @@
     export default {
         name: 'Item',
         props: {
-            model: Object
+            model: Object,
+            selected: Object
         },
         data () {
             return {
-                isOpened: false,
-                isActive: false
+                isOpened: false
             }
         }, 
         computed: {
             hasChildren: function() {
                 return this.model.children && this.model.children.length
+            },
+            isActive: function () {
+                console.log(this.selected.name, this.model.name);
+                console.log(this.selected, this.model)
+                if(this.selected.name && this.selected.name == this.model.name) {
+                    return true
+                } else {return false }
             }
         },
         methods: {

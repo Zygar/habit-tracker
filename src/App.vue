@@ -46,6 +46,7 @@ export default {
         this.selectCurrent(0);
         eventHub.$on('navigationRequest', (requestedChild) => {
             this.newSelectCurrent(requestedChild);
+            
             // requestedChild.isActive = true;
             console.log(requestedChild)
         });

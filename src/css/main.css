@@ -85,6 +85,10 @@
    -------------------------------------------------------------------------- */
 body {background-color: var(--light-blue);}
 .isActive-true {color:red;}
+
+.active {
+  color: red;
+}
 #App {
   background-color: var(--dark-blue);
   display: flex;
