@@ -1,7 +1,7 @@
 <!-- Typically seen inside of InfoView -->
 <template v-if="description">
-    <div id="RenderedDescription" class="component">
-        {{ description }}
+    <div id="RenderedDescription" class="component" v-html="description">
+        
     </div>
 </template>
 

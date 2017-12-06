@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
+    "markdown-loader": "^2.0.1",
     "normalize.css": "^7.0.0",
     "vue": "^2.5.9"
   }

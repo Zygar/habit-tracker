@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
+const marked = require("marked");
+const renderer = new marked.Renderer();
 
 module.exports = {
   // Set context to source directory
@@ -32,6 +34,20 @@ module.exports = {
       {
         test: /\.html$/,
         use: ["html-loader"]
+      },
+      {
+        test: /\.md$/,
+        use: [
+        {
+            loader: "html-loader"
+        },
+        {
+          loader: "markdown-loader",
+           options: {
+              pedantic: true,
+              renderer
+          }
+        }]
       },
       {
         test: /\.(woff|woff2|eot|ttf)$/,

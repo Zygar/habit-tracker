@@ -11,7 +11,7 @@ const sourceData = {
                     children: [
                         {
                             name: "Tablets (Tab.)",
-                            description: "Tablets contain medicine and other additives that are compressed to form suitable shapes.",
+                            description: require('./content/tablets.md'),
                             children: [
                                 {
                                     name: "Uncoated tablets",

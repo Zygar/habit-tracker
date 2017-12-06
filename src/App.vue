@@ -14,7 +14,8 @@ import sourceData from './_data.js';
 import InfoView from './components/InfoView.vue';
 import NavigationView from './components/NavigationView.vue';
 import eventHub from './eventHub.js';
-
+import markDown from './content/tablets.md';
+console.log(markDown)
 
 export default {
     name: 'app', 
@@ -46,7 +47,7 @@ export default {
         this.selectCurrent(0);
         eventHub.$on('navigationRequest', (requestedChild) => {
             this.newSelectCurrent(requestedChild);
-            
+
             // requestedChild.isActive = true;
             console.log(requestedChild)
         });
