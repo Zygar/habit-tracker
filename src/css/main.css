@@ -89,6 +89,8 @@ body {background-color: var(--light-blue);}
 .active {
   color: red;
 }
+
+.item {cursor: pointer;}
 #App {
   background-color: var(--dark-blue);
   display: flex;

@@ -11,9 +11,9 @@
         <AdviceToClient 
             v-if="selected.adviceToClient" 
             :advice="selected.adviceToClient" /> 
-       <!--  <ul>
+        <ul>
             <item :model="selected" />  
-        </ul> -->
+        </ul>
         
     </section>
 </template>

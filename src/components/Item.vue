@@ -3,7 +3,7 @@
      -->
 
 <template>
-    <li>
+    <li class="item">
         <div :class="{active: isActive, expandable: hasChildren}">
             <strong @click="emitNavRequest(model)">{{model.name}}</strong>
             <button v-if="hasChildren" @click="toggle">[{{isOpened ? '-' : '+'}}]</button>
@@ -33,9 +33,8 @@
                 return this.model.children && this.model.children.length
             },
             isActive: function () {
-                console.log(this.selected.name, this.model.name);
-                console.log(this.selected, this.model)
-                if(this.selected.name && this.selected.name == this.model.name) {
+                
+                if(this.selected && this.selected.name == this.model.name) {
                     return true
                 } else {return false }
             }
@@ -49,7 +48,6 @@
             emitNavRequest: function (requestedChild) {
                 console.log("Emitting Navigation Request");
                 eventHub.$emit('navigationRequest', requestedChild);
-                this.isActive = !this.isActive;
             }
         }
     }
