@@ -1,6 +1,5 @@
 <template>
-    <div id="AdviceToClient" class="component">
-        {{advice}}
+    <div id="AdviceToClient" class="component" v-html="advice">
     </div>
 </template>
 
