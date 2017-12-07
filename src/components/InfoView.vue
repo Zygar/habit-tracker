@@ -11,9 +11,14 @@
         <AdviceToClient 
             v-if="selected.adviceToClient" 
             :advice="selected.adviceToClient" /> 
-        <ul class="hasItems">
-            <item :model="selected" />  
-        </ul>
+        
+        <div class="subtypes">
+            <h2>Subtypes</h2>
+            <ul class="hasItems">
+                <item :model="selected" />  
+            </ul>    
+        </div>
+        
         
     </section>
 </template>

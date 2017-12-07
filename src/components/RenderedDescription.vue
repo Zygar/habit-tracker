@@ -1,7 +1,8 @@
 <!-- Typically seen inside of InfoView -->
 <template v-if="description">
-    <div id="RenderedDescription" class="component" v-html="description">
-        
+    <div id="RenderedDescription" class="component">
+        <h2>Description</h2>
+        <div v-html="description"  class="markdown-content"></div>
     </div>
 </template>
 

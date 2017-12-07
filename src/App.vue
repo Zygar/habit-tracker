@@ -30,19 +30,12 @@ export default {
         updateInfo: function(e) {
             this.selectCurrent(this.callNext);
         },
-        selectCurrent: function(req) {
-            // console.log(req);
-            console.log('selectCurrent scope is', this)
-            this.selected = this.allItems.children[0].children[req];
-            // console.log(this.selected)
-            // return this.allItems.children[0]
-        },
         newSelectCurrent: function(newContent) {
             this.selected = newContent;
         }
     },
     mounted () {
-        this.selectCurrent(0);
+        this.newSelectCurrent(this.allItems.children[1].children[3]);
         eventHub.$on('navigationRequest', (requestedChild) => {
             this.newSelectCurrent(requestedChild);
 

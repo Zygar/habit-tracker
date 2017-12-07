@@ -26,7 +26,7 @@
 
 .component {
   position: relative;
-  margin: 14px;
+  /*margin: 14px;*/
 }
 .component::before {
   position: absolute;
@@ -102,6 +102,7 @@ body {background-color: var(--light-blue);}
 ul.hasItems {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .item {
@@ -162,7 +163,27 @@ h1 {
 
 /* Label -------------------------------------------------------- */
 #PharmacyLabel {
-  padding-bottom:2em;
+  margin-bottom:2em;
+  background-color: #fafafa
+}
+
+.label-example {
+  background-color: var(--light-blue);
+  padding: 1em;
+}
+
+.label-example > h3 {
+  margin-top: 0;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.label-example__sample {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 12px;
 }
 
 .labelDose {}
@@ -176,18 +197,26 @@ h1 {
 
 .label-meta {
   padding: 1px;
-  background-color: #fff;
+  background-color: #ffdd91;
   position: relative;
-
+  display: inline-block;
 }
 
 .label-meta::after {
+  font-size: .6em;
   position: absolute;
-  bottom: -100%;
+  top: -50%;
   left: 0;
   text-transform: uppercase;
-  font-size:.8em;
+  
   text-align: center;
+  background-color: white;
+  display: inline-block;
+  padding: 2px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: black;
+  color: #fff;
 }
 
 /* Advice to Client ---------------------------------------------- */
@@ -195,7 +224,10 @@ h1 {
 
 
 /* Sub Types ----------------------------------------------------- */
-
+.subtypes {
+  background-color: var(--light-green);
+  margin-bottom: 0
+}
 
 
 

@@ -1,5 +1,7 @@
 <template>
-    <div id="AdviceToClient" class="component" v-html="advice">
+    <div id="AdviceToClient" class="component">
+        <h2>Advice to Client</h2>
+        <div v-html="advice" class="markdown-content"></div>
     </div>
 </template>
 
