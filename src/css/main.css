@@ -104,9 +104,7 @@ ul.hasItems {
   margin: 0;
 }
 
-.active {
-  background-color: red;
-}
+
 
 .item {
   cursor: pointer;
@@ -120,15 +118,36 @@ ul.hasItems {
   background-color: #fff;
   box-shadow: 1px 1px rgba(0,0,0,0.25);
   margin: .25em;
-  padding: .5em;
+}
+.item__wrapper:hover {
+  background-color: var(--off-white)
+}
+.item__wrapper.expanded {
+  background-color: var(--off-white)
+}
+
+.item__wrapper.active {
+  background-color: var(--light-green);
+  color:#fff;
 }
 
 .item__name {
   flex-grow:1;
+  padding: .5em;
 }
 
 .isTop {
   display:none;
+}
+
+.expand-contract {
+  cursor: pointer;
+  background-color: var(--off-white);
+  border:none;
+  outline: none;
+  border-radius: 0;
+
+  width:48px;
 }
 
 /* Navigation View*/

@@ -4,9 +4,9 @@
 
 <template>
     <li class="item"  v-bind:id="cleanName">
-        <div class="item__wrapper" :class="{active: isActive, expandable: hasChildren, isTop: isTopLevel}"  >
+        <div class="item__wrapper" :class="{active: isActive, expandable: hasChildren, isTop: isTopLevel, expanded: isOpened}"  >
             <div class="item__name" @click="emitNavRequest(model)">{{model.name}}</div>
-            <button v-if="hasChildren" @click="toggle">[{{isOpened ? '-' : '+'}}]</button>
+            <button class="expand-contract"  v-if="hasChildren" @click="toggle">{{isOpened ? '⬆' : '⬇'}}</button>
         </div>
         <ul v-show="isOpened"  v-if="hasChildren"  class="hasItems">
             <item v-for="model in model.children" :model="model" :key="model.id" :selected="selected"></item>
