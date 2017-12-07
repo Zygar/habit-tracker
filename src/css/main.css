@@ -89,11 +89,6 @@ body {
 
 }
 
-.active {
-  color: red;
-}
-
-.item {cursor: pointer;}
 
 #App {
   background-color: var(--dark-blue);
@@ -109,41 +104,62 @@ ul.hasItems {
   margin: 0;
 }
 
+.active {
+  background-color: red;
+}
+
 .item {
   cursor: pointer;
 }
 
+.expandable > .item__name {
+  font-weight: bold;
+}
 .item__wrapper {
   display: flex;
+  background-color: #fff;
+  box-shadow: 1px 1px rgba(0,0,0,0.25);
+  margin: .25em;
+  padding: .5em;
 }
 
 .item__name {
   flex-grow:1;
 }
 
-#oral, #oral > .item {
-  background-color: var(--light-blue);
-}
-
-#parenteral {
-  background-color: var(--light-red);
+.isTop {
+  display:none;
 }
 
 /* Navigation View*/
 
 #NavigationView {
-  width: 50%;
+  width: 40%;
+  background-color: var(--dark-blue);
 }
 
 
 
 
 
+body {padding: 2em;}
+#vue {
+  height: 100%;
+  background-color: #fff;
+  border: 2px solid var(--dark-blue);
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.25);
+}
+
+#App {
+  height: 100%;
+  overflow:hidden;
+}
 
 /*Info View*/
 #InfoView {
   background-color: var(--off-white);
-  width: 50%;
+  width: 60%;
+  overflow-y: scroll;
 }
 
 #InfoView > .component {

@@ -4,7 +4,7 @@
 
 <template>
     <li class="item"  v-bind:id="cleanName">
-        <div class="item__wrapper" :class="{active: isActive, expandable: hasChildren}"  >
+        <div class="item__wrapper" :class="{active: isActive, expandable: hasChildren, isTop: isTopLevel}"  >
             <div class="item__name" @click="emitNavRequest(model)">{{model.name}}</div>
             <button v-if="hasChildren" @click="toggle">[{{isOpened ? '-' : '+'}}]</button>
         </div>
@@ -29,6 +29,13 @@
             }
         }, 
         computed: {
+            isTopLevel: function() {
+                if (this.$options.name != this.$parent.$options.name) {
+                    console.log( this.$options.name, this.$parent.$options.name)
+                    this.isOpened = true;
+                    return true
+                }
+            },
             hasChildren: function() {
                 return this.model.children && this.model.children.length
             },
