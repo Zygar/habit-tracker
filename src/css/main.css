@@ -24,9 +24,8 @@
    Dev Labels
    -------------------------------------------------------------------------- */
 
-.component {
+/*.component {
   position: relative;
-  /*margin: 14px;*/
 }
 .component::before {
   position: absolute;
@@ -77,8 +76,8 @@
 
 #SubTypes::before {
   content: "SubTypes";
-}
-
+} 
+*/
 
 /* --------------------------------------------------------------------------
    Component Styles
@@ -147,6 +146,18 @@ ul.hasItems {
   width: 50%;
 }
 
+#InfoView > .component {
+  padding:1em;
+}
+
+#InfoView > .component:nth-child(odd) {
+  background-color: #f7f8f9
+}
+
+#InfoView > .component:nth-child(even) {
+  background-color: #fffefa
+}
+
 h2 {
   margin:0;
   font-weight: 300;
@@ -156,8 +167,7 @@ h2 {
 /* Info View Header------------------------------------------------ */
 
 #InfoViewHeader {
-  background-color: var(--dark-green);
-  padding: 1em;
+  background-color: var(--dark-green)!important;
   color: #fff;
 }
 
@@ -172,22 +182,27 @@ h1 {
 
 /* Description  ------------------------------------------------- */
 #RenderedDescription {
-  background-color: #fafafa;
   border-bottom: 2px solid black;
-  padding: 1em;
+}
+
+.markdown-content p {
+  max-width: 35em
 }
 
 
 
 /* Label -------------------------------------------------------- */
 #PharmacyLabel {
-  margin-bottom:2em;
-  background-color: #fafafa
+  background-color: #fafafa;
+  border-bottom: 2px solid var(--off-black);
+  padding-bottom: 0!important;
 }
 
 .label-example {
   background-color: var(--light-blue);
   padding: 1em;
+  margin-left: -1em;
+  margin-right: -1em;
 }
 
 .label-example > h3 {
@@ -238,7 +253,9 @@ h1 {
 }
 
 /* Advice to Client ---------------------------------------------- */
+#AdviceToClient {
 
+}
 
 
 /* Sub Types ----------------------------------------------------- */

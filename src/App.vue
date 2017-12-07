@@ -2,10 +2,6 @@
     <main id="App"  class="component">
         <NavigationView  :tree="allItems" :selected="selected" />
         <InfoView :selected="selected" />
-        <div style="position:fixed; bottom:0; width:100%; margin-bottom:1em; height: 2em;">
-            <input type="text" name="current" v-model="callNext"> <button v-on:click="updateInfo()">Update</button>    
-        </div>
-        
     </main>
 </template>
 
