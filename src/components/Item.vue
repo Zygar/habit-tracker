@@ -39,9 +39,12 @@
                 } else {return false }
             },
             cleanName: function() {
-                var str = this.model.name;
-                str = str.replace(/\s+/g, '-').toLowerCase();
-                return str
+                if (this.model.name) {
+                    var str = this.model.name;
+                    str = str.replace(/\s+/g, '-').toLowerCase();
+                    return str    
+                }
+                else return false               
             }
         },
         methods: {

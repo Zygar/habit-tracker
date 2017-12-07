@@ -1,14 +1,17 @@
 // Import subtypes here and reference them in children
+// import SUBTYPE from './SUBTYPE/_data.js';
 
 export default {
-    name: "Ampoules, vials for reconstitution, multi-dose vials",
+    name: "Implants",
     description: require('./desc.md'),
     label: {
         labelDescription: require('./label-desc.md'),
-        labelVerb: "Inject",
-        labelDose: "1 unit",
-        labelFrequency: "intravenously every 4 hours"
+        // labelVerb: "Take",
+        // labelDose: "2 tablets",
+        // labelFrequency: "twice daily"
     },
     adviceToClient: require('./advice.md'),
-    // children: []
+    // children: [
+    //     SUBTYPE
+    // ]
 }
