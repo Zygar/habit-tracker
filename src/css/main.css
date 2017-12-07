@@ -84,23 +84,58 @@
    Component Styles
    -------------------------------------------------------------------------- */
 body {background-color: var(--light-blue);}
-.isActive-true {color:red;}
 
 .active {
   color: red;
 }
 
 .item {cursor: pointer;}
+
 #App {
   background-color: var(--dark-blue);
   display: flex;
 }
 
+
+/* Items */
+
+ul.hasItems {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item__wrapper {
+  display: flex;
+}
+
+.item__name {
+  flex-grow:1;
+}
+
+#oral, #oral > .item {
+  background-color: var(--light-blue);
+}
+
+#parenteral {
+  background-color: var(--light-red);
+}
+
+/* Navigation View*/
+
 #NavigationView {
-  background-color: #aaa;
   width: 50%;
 }
 
+
+
+
+
+
+/*Info View*/
 #InfoView {
   background-color: var(--off-white);
   width: 50%;

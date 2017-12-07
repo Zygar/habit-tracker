@@ -1,7 +1,9 @@
 <template v-if="label">
     <div id="PharmacyLabel" class="component">
-        <p>{{label.labelDescription}}</p>
+        <div class="label-description" v-html="label.labelDescription"></div>
+        <div class="label-example">
         <p>{{label.labelVerb}} <span class="label-meta  labelDose">{{label.labelDose}}</span> <span class="label-meta  labelFrequency">{{label.labelFrequency}}</span>.</p>
+        </div>
     </div>
 </template>
 

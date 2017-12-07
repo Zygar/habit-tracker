@@ -1,5 +1,5 @@
 <template>
-    <ul id="NavigationView"  class="component">
+    <ul id="NavigationView"  class="component  hasItems">
         <item :model="tree" :selected="selected" ></item>
     </ul>
 </template>

@@ -3,12 +3,12 @@
      -->
 
 <template>
-    <li class="item">
-        <div :class="{active: isActive, expandable: hasChildren}">
-            <strong @click="emitNavRequest(model)">{{model.name}}</strong>
+    <li class="item"  v-bind:id="cleanName">
+        <div class="item__wrapper" :class="{active: isActive, expandable: hasChildren}"  >
+            <div class="item__name" @click="emitNavRequest(model)">{{model.name}}</div>
             <button v-if="hasChildren" @click="toggle">[{{isOpened ? '-' : '+'}}]</button>
         </div>
-        <ul v-show="isOpened"  v-if="hasChildren">
+        <ul v-show="isOpened"  v-if="hasChildren"  class="hasItems">
             <item v-for="model in model.children" :model="model" :key="model.id" :selected="selected"></item>
         </ul>
     </li>
@@ -37,6 +37,11 @@
                 if(this.selected && this.selected.name == this.model.name) {
                     return true
                 } else {return false }
+            },
+            cleanName: function() {
+                var str = this.model.name;
+                str = str.replace(/\s+/g, '-').toLowerCase();
+                return str
             }
         },
         methods: {
