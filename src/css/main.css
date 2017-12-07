@@ -83,7 +83,12 @@
 /* --------------------------------------------------------------------------
    Component Styles
    -------------------------------------------------------------------------- */
-body {background-color: var(--light-blue);}
+body {
+
+  background-color: var(--light-blue);
+  color: var(--off-black);
+
+}
 
 .active {
   color: red;
@@ -142,23 +147,36 @@ ul.hasItems {
   width: 50%;
 }
 
+h2 {
+  margin:0;
+  font-weight: 300;
+  color: var(--off-black);
+  border-bottom: 1px solid var(--blue-grey);
+}
 /* Info View Header------------------------------------------------ */
 
 #InfoViewHeader {
-  border-bottom: 2px solid black;
-  margin-bottom: 1em;
-  background-color: #ddd
+  background-color: var(--dark-green);
+  padding: 1em;
+  color: #fff;
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px rgba(0,0,0,0.4);
+  font-weight: 100;
+  line-height: 110%;
 }
 
 /* Description  ------------------------------------------------- */
 #RenderedDescription {
   background-color: #fafafa;
   border-bottom: 2px solid black;
+  padding: 1em;
 }
+
 
 
 /* Label -------------------------------------------------------- */
