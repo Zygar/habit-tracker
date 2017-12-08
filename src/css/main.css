@@ -116,8 +116,8 @@ ul.hasItems {
 .item__wrapper {
   display: flex;
   background-color: #fff;
-  box-shadow: 1px 1px rgba(0,0,0,0.25);
-  margin: .25em;
+  box-shadow: 2px 2px rgba(0,0,0,0.5);
+  margin: .25em 0;
 }
 .item__wrapper:hover {
   background-color: var(--off-white)
@@ -155,6 +155,8 @@ ul.hasItems {
 #NavigationView {
   width: 40%;
   background-color: var(--dark-blue);
+  padding-left: .25em;
+  padding-right: .25em;
 }
 
 
@@ -179,12 +181,17 @@ body {padding: 2em;}
   background-color: var(--off-white);
   width: 60%;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 #InfoView > .component {
   padding:1em;
 }
 
+#InfoView > div:last-child {
+  flex-grow: 1;
+}
 #InfoView > .component:nth-child(odd) {
   background-color: #f7f8f9
 }
@@ -296,8 +303,21 @@ h1 {
 /* Sub Types ----------------------------------------------------- */
 .subtypes {
   background-color: var(--light-green);
-  margin-bottom: 0
+  margin-bottom: 0;
+  padding: 1em;
 }
+
+.subtypes h2 {
+  border-bottom: none;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0,0,0,0.25);
+  text-transform: uppercase;
+  margin-bottom:1em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight:bold;
+}
+
 
 
 

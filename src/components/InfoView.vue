@@ -12,7 +12,7 @@
             v-if="selected.adviceToClient" 
             :advice="selected.adviceToClient" /> 
         
-        <div class="subtypes">
+        <div class="subtypes"  v-if="selected.children">
             <h2>Subtypes</h2>
             <ul class="hasItems">
                 <item :model="selected" />  
