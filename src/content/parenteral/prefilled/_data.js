@@ -6,9 +6,16 @@ export default {
     description: require('./desc.md'),
     label: {
         labelDescription: require('./label-desc.md'),
-        labelVerb: "Inject",
-        labelDose: "1ml (100mg) subcutaneously",
-        labelFrequency: "once daily as directed"
+        labelSampleInstructions: [
+            {
+                labelWarning: "",
+                labelVerb: "Inject",
+                labelDose: "1ml (100mg)",
+                labelMeta: "subcutaneously",
+                labelFrequency: "once daily",
+                labelSecondMeta: "as directed"
+            }
+        ]
     },
     adviceToClient: require('./advice.md'),
     // children: [

@@ -5,10 +5,7 @@ export default {
     name: "Cartridges with pen injectors",
     description: require('./desc.md'),
     label: {
-        labelDescription: require('./label-desc.md'),
-        // labelVerb: "Take",
-        // labelDose: "2 tablets",
-        // labelFrequency: "twice daily"
+        labelDescription: require('./label-desc.md')
     },
     adviceToClient: require('./advice.md'),
     // children: [

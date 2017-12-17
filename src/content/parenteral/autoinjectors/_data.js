@@ -6,9 +6,16 @@ export default {
     description: require('./desc.md'),
     label: {
         labelDescription: require('./label-desc.md'),
-        labelVerb: "Inject the contents of",
-        labelDose: "ONE syringe",
-        labelFrequency: "ONCE a FORTNIGHT as directed"
+        labelSampleInstructions: [
+            {
+                labelWarning: "",
+                labelVerb: "Inject the contents of",
+                labelDose: "ONE syringe",
+                labelMeta: "",
+                labelFrequency: "ONCE a FORTNIGHT",
+                labelSecondMeta: "as directed"
+            }
+        ]
     },
     adviceToClient: require('./advice.md'),
     // children: [

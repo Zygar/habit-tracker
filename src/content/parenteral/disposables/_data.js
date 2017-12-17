@@ -6,9 +6,6 @@ export default {
     description: require('./desc.md'),
     label: {
         labelDescription: require('./label-desc.md')
-        // labelVerb: "Take",
-        // labelDose: "2 tablets",
-        // labelFrequency: "twice daily"
     },
     adviceToClient: require('./advice.md'),
     // children: [
