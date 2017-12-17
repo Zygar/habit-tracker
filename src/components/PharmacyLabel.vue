@@ -2,12 +2,13 @@
     <div id="PharmacyLabel" class="component">
         <h2>Label</h2>
         <div class="label-description  markdown-content" v-html="label.labelDescription"></div>
-        <div class="label-example" v-if="label.labelVerb">
-            <h3>Sample Label</h3>
-            <div class="label-example__sample">
-                {{label.labelVerb}} <span class="label-meta  labelDose">{{label.labelDose}}</span> <span class="label-meta  labelFrequency">{{label.labelFrequency}}</span>.
+        <div class="label-example" v-if="label.labelSampleInstructions">
+            <h3>Sample Label Instructions</h3>
+            <div v-for="sample in label.labelSampleInstructions">
+                <div class="label-example__sample">
+                    {{sample.labelWarning}} {{sample.labelVerb}} <span class="label-meta  labelDose">{{sample.labelDose}}</span> {{sample.labelMeta}} <span class="label-meta  labelFrequency">{{sample.labelFrequency}}</span> {{sample.labelSecondMeta}}.
+                </div>
             </div>
-            
         </div>
     </div>
 </template>
