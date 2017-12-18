@@ -1,0 +1,1 @@
+They should be labelled 'STORE IN A COOL PLACE' and 'Insert x pessary/pessaries (DOSE) into the vagina x times daily (FREQUENCY)'. It is a legal requirement for 'CAUTION: NOT TO BE TAKEN' or 'FOR VAGINAL USE ONLY' to be included on the label.
