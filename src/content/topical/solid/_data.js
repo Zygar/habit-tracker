@@ -1,9 +1,10 @@
-// import SUBTYPE from './SUBTYPE/_data.js';
+import powders from './powders/_data.js';
+import transdermal from './transdermal/_data.js';
 
 export default {
-    name: "NAME",
-    // description: require('./desc.md'),
+    name: "Solid topical dose forms",
     children: [
-        SUBTYPE
+        powders,
+        transdermal
     ]
 }

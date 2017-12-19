@@ -1,0 +1,1 @@
+Alcohol-based scalp applications -- for example, betamethasone scalp application -- should include a warning against drying the hair near an open flame, and if using hair dryers a warning to use the lower setting. Keep away from eyes.

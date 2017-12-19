@@ -6,7 +6,7 @@
             <h3>Sample Label Instructions</h3>
             <div v-for="sample in label.labelSampleInstructions">
                 <div class="label-example__sample">
-                    {{sample.labelWarning}} {{sample.labelVerb}} <span class="label-meta  labelDose">{{sample.labelDose}}</span> {{sample.labelMeta}} <span class="label-meta  labelFrequency">{{sample.labelFrequency}}</span> {{sample.labelSecondMeta}}.
+                    {{sample.labelWarning}} {{sample.labelVerb}} <span v-if="sample.labelDose" title="dose" class="label-meta  labelDose">{{sample.labelDose}}</span> {{sample.labelMeta}} <span v-if="sample.labelFrequency" class="label-meta  labelFrequency">{{sample.labelFrequency}}</span> {{sample.labelSecondMeta}}.
                 </div>
             </div>
         </div>
