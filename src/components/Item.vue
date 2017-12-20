@@ -63,9 +63,7 @@
             emitNavRequest: function (requestedChild) {
                 console.log("Emitting Navigation Request");
                 eventHub.$emit('navigationRequest', requestedChild);
-                if (!this.isOpened) {
-                    this.toggle();    
-                }
+                this.toggle();    
             }
         }
     }
