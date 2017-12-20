@@ -325,6 +325,10 @@ h1 {
 /* ==========================================================================
    misc 
    ========================================================================== */
+.toggler {user-select: none; cursor: pointer;}
+.toggler.isHidden {border-bottom:none; font-weight:bold; margin-bottom:.5em;}
+.toggleStatus {font-weight: bold; }
+
 
 * {box-sizing: border-box;}
 html, body {height:100%;}

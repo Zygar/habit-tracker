@@ -1,8 +1,8 @@
 <template v-if="label">
     <div id="PharmacyLabel" class="component">
-        <h2>Label</h2>
-        <div class="label-description  markdown-content" v-html="label.labelDescription"></div>
-        <div class="label-example" v-if="label.labelSampleInstructions">
+        <h2 class="toggler" @click="toggle()" :class="{isHidden: !isOpened}">Label <span class="toggleStatus">{{isOpened ? '-' : '+'}}</span></h2>
+        <div class="label-description  markdown-content" v-show="isOpened" v-html="label.labelDescription"></div>
+        <div class="label-example" v-show="isOpened"  v-if="label.labelSampleInstructions">
             <h3>Sample Label Instructions</h3>
             <div v-for="sample in label.labelSampleInstructions">
                 <div class="label-example__sample">
@@ -16,6 +16,16 @@
 <script>
 export default {
     name: 'PharmacyLabel',
-    props: ['label']
+    props: ['label'],
+    data() {
+        return {
+            isOpened: false
+        }
+    },
+    methods: {
+        toggle: function () {    
+            this.isOpened = !this.isOpened
+        }
+    }
 }
 </script>
