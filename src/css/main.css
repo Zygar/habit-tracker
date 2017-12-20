@@ -16,68 +16,6 @@
 
 
 
-/* ==========================================================================
-   Example styles. Delete these.
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   Dev Labels
-   -------------------------------------------------------------------------- */
-
-/*.component {
-  position: relative;
-}
-.component::before {
-  position: absolute;
-  top: -14px;
-  left: 0;
-  display: block;
-  font-size: 0.5em;
-  background-color: black;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: white;
-  opacity: 0.9;
-  padding: 2px;
-}
-
-.component:hover::before {
-  opacity:0.4;
-  background-color: green
-}
-
-#App::before {
-  content: "App";
-}
-
-#NavigationView::before {
-  content: "NavigationView";
-}
-
-#InfoView::before {
-  content: "InfoView";
-}
-
-#InfoViewHeader::before {
-  content: "InfoViewHeader";
-}
-
-#RenderedDescription::before {
-  content: "RenderedDescription";
-}
-
-#PharmacyLabel::before {
-  content: "PharmacyLabel";
-}
-
-#AdviceToClient::before {
-  content: "AdviceToClient";
-}
-
-#SubTypes::before {
-  content: "SubTypes";
-} 
-*/
 
 /* --------------------------------------------------------------------------
    Component Styles
@@ -103,8 +41,6 @@ ul.hasItems {
   padding: 0;
   margin: 0;
 }
-
-
 
 .item {
   cursor: pointer;
@@ -185,12 +121,12 @@ body {padding: 2em;}
 
 /*Info View*/
 #InfoView {
-  background-color: var(--off-white);
+  background-color: var(--light-green);
   width: 60%;
   overflow-y: scroll;
   -webkit-overflow-scrolling:touch;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
 }
 
 #InfoView > .component {
@@ -198,7 +134,7 @@ body {padding: 2em;}
 }
 
 #InfoView > div:last-child {
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 #InfoView > .component:nth-child(odd) {
   background-color: #f7f8f9

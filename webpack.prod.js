@@ -4,10 +4,14 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ZipPlugin = require('zip-webpack-plugin');
+const webpack = require('webpack')
 
 
 module.exports = merge(common, {
   plugins: [
+      new webpack.DefinePlugin({
+        'process.env': 'production'
+      }),
       new UglifyJSPlugin(),
       new ExtractTextPlugin({filename: "css/bundle.min.css"}),
       new ZipPlugin({
