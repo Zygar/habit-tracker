@@ -3337,6 +3337,10 @@ pleeease-filters@^4.0.0:
     onecolor "^3.0.4"
     postcss "^6.0.1"
 
+popper.js@^1.12.9:
+  version "1.12.9"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.12.9.tgz#0dfbc2dff96c451bb332edcfcfaaf566d331d5b3"
+
 portfinder@^1.0.9:
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.13.tgz#bb32ecd87c27104ae6ee44b5a3ccbf0ebb1aede9"
@@ -4676,6 +4680,12 @@ timers-browserify@^2.0.2:
   dependencies:
     setimmediate "^1.0.4"
 
+tippy.js@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-2.0.8.tgz#7f3e8985efa1a5052d692988b55b44afa8f1dc39"
+  dependencies:
+    popper.js "^1.12.9"
+
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -4938,6 +4948,12 @@ vue-template-compiler@^2.5.9:
 vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
+
+vue-tippy@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/vue-tippy/-/vue-tippy-2.0.2.tgz#997b8e8155906d169877311e20a611a4d2a55344"
+  dependencies:
+    tippy.js "^2.0.8"
 
 vue@^2.5.9:
   version "2.5.9"

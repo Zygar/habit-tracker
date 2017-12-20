@@ -266,14 +266,10 @@ h1 {
   padding: 10px 12px;
 }
 
-.labelDose {}
-.labelDose::after {
-  content: "dosage";
+.labelDose, .labelFrequency {
+  cursor: pointer;
 }
-.labelFrequency {}
-.labelFrequency::after {
-  content: "frequency";
-}
+
 
 .label-meta {
   padding: 1px;

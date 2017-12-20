@@ -22,6 +22,7 @@ import LatoBold from 'Fonts/lato-bold/lato-bold.css'; // 700 / BOLD
 /* Load Styles */ 
 import styles from './css/main.css';
 import Vue from 'vue/dist/vue.js';
+import VueTippy from 'vue-tippy';
 import App from './App.vue';
 
 new Vue({
@@ -29,4 +30,6 @@ new Vue({
   // data: sourceData,
   components: { App }
 });
+
+Vue.use(VueTippy);
 
