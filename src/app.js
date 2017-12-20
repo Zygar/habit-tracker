@@ -9,7 +9,7 @@
 
    /* Comment out fonts you don't want in the final bundle. */
    
-import LatoHairline from 'Fonts/lato-hairline/lato-hairline.css';  // 100
+// import LatoHairline from 'Fonts/lato-hairline/lato-hairline.css';  // 100
 // import LatoThin from 'Fonts/lato-thin/lato-thin.css'; // 200
 import LatoLight from 'Fonts/lato-light/lato-light.css'; // 300
 import LatoRegular from 'Fonts/lato-regular/lato-regular.css';  // 400 / REGULAR
