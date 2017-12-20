@@ -31,7 +31,7 @@ export default {
         }
     },
     mounted () {
-        this.newSelectCurrent(this.allItems.children[1].children[3]);
+        this.newSelectCurrent(this.allItems);
         eventHub.$on('navigationRequest', (requestedChild) => {
             this.newSelectCurrent(requestedChild);
 
