@@ -357,7 +357,10 @@ button.mobile-nav:focus {
   position: relative;
 }
 @media only screen and (max-width: 700px) {
-
+  body {
+    padding: 0;
+    background-color: #eee;
+  }
   #App {
     flex-direction: column;
   }
