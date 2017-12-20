@@ -1,1 +1,1 @@
-Sublingual tablets should be labelled as ‘Dissolve _[dosage]_ under the tongue _[frequency]_ times daily’.
+Sublingual tablets should be labelled as ‘Dissolve (DOSE) under the tongue (FREQUENCY) times daily’.

@@ -8,9 +8,9 @@ export default {
                 labelWarning: "NOT TO BE TAKEN.",
                 labelVerb: "Instil",
                 labelDose: "2 drops",
-                labelMeta: "in eye",
-                labelFrequency: "3 times daily",
-                labelSecondMeta: ""
+                labelMeta: "to left eye",
+                labelFrequency: "3 times daily.",
+                labelSecondMeta: "Discard 30 days after opening."
             }
         ]
     },

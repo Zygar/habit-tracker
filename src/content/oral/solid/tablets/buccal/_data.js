@@ -11,7 +11,7 @@ export default {
                 labelWarning: "",
                 labelVerb: "Place",
                 labelDose: "1 tablet",
-                labelMeta: "between upper gum and cheeky and allow it to dissolve",
+                labelMeta: "between upper gum and cheek and allow it to dissolve",
                 labelFrequency: "3 times daily",
                 labelSecondMeta: ""
             }
