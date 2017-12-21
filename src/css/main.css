@@ -121,12 +121,12 @@ body {padding: 2em;}
 
 /*Info View*/
 #InfoView {
-  background-color: var(--light-green);
+  background-color: var(--off-white);
   width: 60%;
   overflow-y: scroll;
   -webkit-overflow-scrolling:touch;
-  /*display: flex;
-  flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
 }
 
 #InfoView > .component {
@@ -134,7 +134,7 @@ body {padding: 2em;}
 }
 
 #InfoView > div:last-child {
-  /*flex-grow: 1;*/
+  flex-grow: 1;
 }
 #InfoView > .component:nth-child(odd) {
   background-color: #f7f8f9
@@ -338,3 +338,11 @@ button.mobile-nav:focus {
     flex-grow:1;
   }
 }
+
+
+@media all and (-ms-high-contrast:none)
+     {
+      #InfoView {
+        display:block;
+      }
+     }
