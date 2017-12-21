@@ -1,6 +1,6 @@
 It is good practice to label all mixtures 'Shake the bottle' to ensure they are evenly dispersed.
 
-The label should clearly state dose and frequency. For example, Take x mL (DOSE) x times daily (FREQUENCY)'.
+The label should clearly state dose and frequency. For example, Take x ml (DOSE) x times daily (FREQUENCY)'.
 
 Mixtures need an expiry date, because they are vulnerable to bacteria, fungi and moulds. Check reference sources such as the eMixt site (which can be accessed via the New Zealand Formulary) before preparing the label. Your pharmacist will guide you.
 

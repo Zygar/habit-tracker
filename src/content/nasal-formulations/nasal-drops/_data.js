@@ -10,7 +10,7 @@ export default {
                 labelVerb: "Instil",
                 labelDose: "3 drops",
                 labelMeta: "into each nostril",
-                labelFrequency: "2 times daily",
+                labelFrequency: "TWICE daily",
                 labelSecondMeta: ""
             }
         ]

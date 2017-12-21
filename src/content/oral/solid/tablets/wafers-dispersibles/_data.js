@@ -12,7 +12,7 @@ export default {
                 labelVerb: "Place",
                 labelDose: "1 tablet",
                 labelMeta: "on tongue, allow to disperse then swallow. ",
-                labelFrequency: "Take 2 times daily",
+                labelFrequency: "Take TWICE daily",
                 labelSecondMeta: ""
             }
         ]

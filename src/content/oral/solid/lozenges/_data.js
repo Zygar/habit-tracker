@@ -12,7 +12,7 @@ export default {
                 labelVerb: "Suck or dissolve",
                 labelDose: "1 lozenge",
                 labelMeta: "slowly in the mouth",
-                labelFrequency: "2 times daily",
+                labelFrequency: "TWICE daily",
                 labelSecondMeta: ""
             }
         ]

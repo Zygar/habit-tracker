@@ -12,7 +12,7 @@ export default {
                 labelVerb: "Chew",
                 labelDose: "1 tablet",
                 labelMeta: "then swallow",
-                labelFrequency: "2 times daily",
+                labelFrequency: "TWICE daily",
                 labelSecondMeta: ""
             }
         ]

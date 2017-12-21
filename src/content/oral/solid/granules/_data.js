@@ -12,7 +12,7 @@ export default {
                 labelVerb: "Take",
                 labelDose: "one 5ml spoonful",
                 labelMeta: "in water",
-                labelFrequency: "2 times daily",
+                labelFrequency: "TWICE daily",
                 labelSecondMeta: ""
             }
         ]

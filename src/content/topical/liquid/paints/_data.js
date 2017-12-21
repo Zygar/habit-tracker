@@ -12,7 +12,7 @@ export default {
                 labelVerb: "Paint",
                 labelDose: "5ml",
                 labelMeta: "onto affected area",
-                labelFrequency: "2 times daily",
+                labelFrequency: "TWICE daily",
                 labelSecondMeta: ""
             }
         ]
