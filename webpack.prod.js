@@ -10,9 +10,15 @@ const webpack = require('webpack')
 module.exports = merge(common, {
   plugins: [
       new webpack.DefinePlugin({
-        'process.env': 'production'
+        'process.env': {
+          NODE_ENV: '"production"'
+        }
       }),
-      new UglifyJSPlugin(),
+      new UglifyJSPlugin({
+        compress: {
+          drop_console: true
+        }
+      }),
       new ExtractTextPlugin({filename: "css/bundle.min.css"}),
       new ZipPlugin({
         filename:  __dirname + ".bundle.zip",
