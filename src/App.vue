@@ -1,7 +1,6 @@
 <template>
     <main id="App"  class="component">
-        <NavigationView  :tree="allItems" :selected="selected" />
-        <InfoView :selected="selected" />
+        <h1>Welcome to the HABIT TRACKER</h1>
     </main>
 </template>
 
@@ -29,21 +28,6 @@ export default {
         newSelectCurrent: function(newContent) {
             this.selected = newContent;
         }
-    },
-    mounted () {
-        this.newSelectCurrent(this.allItems);
-        eventHub.$on('navigationRequest', (requestedChild) => {
-            this.newSelectCurrent(requestedChild);
-
-            // requestedChild.isActive = true;
-            console.log(requestedChild)
-        });
-        // eventHub.$on('navigationRequest', function(requestedChild) {
-        //     console.log("Navigation request FIRED", requestedChild);
-        //     console.log('mounted scope is', this);
-
-        //     // this.selectCurrent(requestedChild);
-        // })
     }
 }
 </script>
