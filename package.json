@@ -1,7 +1,7 @@
 {
-  "name": "PHT006-Visual-Wiki",
+  "name": "Andy-Habit-Tracker",
   "version": "0.1.0",
-  "description": "A big, huge, massive explorable diagram of pharmaceutical dose forms.",
+  "description": "A way to track habits without getting it all going to shit if you break your streak.",
   "main": "main.js",
   "repository": "https://github.com/Zygar/PHT006-Visual-Wiki",
   "author": "Andy Wilkinson <hello@andy.town>",

@@ -1,14 +1,10 @@
-# OPT Boilerplate - 0.3
-## What is this? 
+# Andy Boilerplate
 
-This is a modern boilerplate for kickstarting development of new, iQualify-compatible learning modules. It saves you time by:
-
-- Automatically prefixing your CSS to be compatible with browsers back to IE11 and Firefox 30.
+- Automatically prefixes CSS to be compatible with browsers back to IE11 and Firefox 30.
 - Abstracting commonly reused assets, like fonts and colours, into modules which you can simply @import
 - Running a local server with LiveReload. This server is accessible over LAN for cross-browser testing. 
 - Automatically detecting, bundling, and minifying dependencies for super-fast load times. 
 - Letting you use the NPM ecosystem to install modules. No more copy/paste nonsense. 
-- **Giving you a single command to generate an iQualify-ready zip file for delivery!** `yarn build:prod`
 
 By default, this includes several packages. 
 
@@ -21,7 +17,6 @@ It also includes:
 - Lato Webfont (Complete character set.) Load just the weights you need.
 - Brand colours as CSS variables. 
 - Sensible styling defaults, courtesy of HTML5-Boilerplate.
-
 
 The development setup for this includes 
 
@@ -55,9 +50,6 @@ You should only need to do this stuff once.
 
 To add packages `yarn add [name]` or `yarn add --dev [name]` for dev tools like Webpack. 
 
-#### Future Commands 
-- `yarn deploy:testing` (not currently implemented) will run a deploy script to package and deploy to Azure at creative-design-testing.azurewebsites.net.
-- `yarn deploy:portfolio` (not currently implemented) will run a deploy script to package and deploy to Azure at creative-design.azurewebsites.net 
 
 ### Gotchas
 - Some old browsers can't handle the livereload server. If you get console errors that make noise about "let is a reserved identifier", message me on Slack and I'll talk you through solutions. 
