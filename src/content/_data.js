@@ -1,22 +1,22 @@
 export default {
     habits: [
         {
-            name: "Pot Free Day", 
+            title: "Pot Free Day", 
             emoji: "🍁",
-            targetPercentage: 0.75,
-            actualPercentagePlaceholder: 0.5
+            targetPercentage: "75%",
+            actualPercentagePlaceholder: "50%"
         },
         {
-            name: "Inhaled No Smoke", 
+            title: "Inhaled No Smoke", 
             emoji: "🚭",
-            targetPercentage: 1,
-            actualPercentagePlaceholder: 1
+            targetPercentage: "100%",
+            actualPercentagePlaceholder: "100%"
         },
         {
-            name: "Did Physio", 
+            title: "Did Physio", 
             emoji: "💪",
-            targetPercentage: 0.8,
-            actualPercentagePlaceholder: 0.9
+            targetPercentage: "80%",
+            actualPercentagePlaceholder: "90%"
         }
 
     ]
