@@ -3,20 +3,26 @@ export default {
         {
             title: "Pot Free Day", 
             emoji: "🍁",
-            targetPercentage: 0.75,
-            actualPercentagePlaceholder: 0.5
+            targetPercentage: 75,
+            actualPercentagePlaceholder: 50
         },
         {
             title: "Inhaled No Smoke", 
             emoji: "🚭",
-            targetPercentage: 1,
-            actualPercentagePlaceholder: 1
+            targetPercentage: 100,
+            actualPercentagePlaceholder: 95
         },
         {
             title: "Did Physio", 
             emoji: "💪",
-            targetPercentage: 0.8,
-            actualPercentagePlaceholder: 0.9
+            targetPercentage: 50,
+            actualPercentagePlaceholder: 90
+        },
+        {
+            title: "Weight Training", 
+            emoji: "🏋️",
+            targetPercentage: 50,
+            actualPercentagePlaceholder: 45
         }
 
     ]

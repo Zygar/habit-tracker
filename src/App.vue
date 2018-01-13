@@ -1,6 +1,5 @@
 <template>
     <main id="App"  class="component">
-        
         <habit v-for="habit in habits" :title="habit.title" :emoji="habit.emoji" :targetPercentage="habit.targetPercentage" :actualPercentagePlaceholder="habit.actualPercentagePlaceholder"></habit>        
     </main>
 </template>
