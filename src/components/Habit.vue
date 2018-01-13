@@ -3,10 +3,11 @@
         <div class="habit-main-tile">
             <div class="habit-primary-data">
                 <h2>{{title}}</h2>
+                {{ percentageValues.target }}
                 <div class="progress-bar">
-                    {{actualPercentagePlaceholder }} / {{targetPercentage}}
-                    <div class="target-percentage" :style="{ width: targetPercentage }"></div>
-                    <div class="actual-percentage" :style="{ width: actualPercentagePlaceholder }"></div>
+                    {{percentageValues.actual}} / {{percentageValues.target}}
+                    <div class="target-percentage" :style="{ width: percentageValues.target }"></div>
+                    <div class="actual-percentage" :style="{ width: percentageValues.actual }"></div>
                 </div>
             </div>    
             <div class="emoji-box">
@@ -22,6 +23,14 @@
 <script>
 export default {
     name: "habit",
-    props: ["title", "emoji", "targetPercentage", "actualPercentagePlaceholder"]
+    props: ["title", "emoji", "targetPercentage", "actualPercentagePlaceholder"],
+    computed:  {
+        percentageValues: function() {
+            return {
+                target: (this.targetPercentage * 100) + "%",
+                actual: (this.actualPercentagePlaceholder * 100) + "%"
+            }
+        }
+    }
 }
 </script>
